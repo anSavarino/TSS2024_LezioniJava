@@ -8,6 +8,8 @@ public class AreaCerchio {
 
 	public static void main(String[] args) {
 		
+		
+		//Commento
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Inserisci il raggio del cerchio: ");
