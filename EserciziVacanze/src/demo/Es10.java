@@ -49,5 +49,6 @@ public class Es10 {
 		}else {
 			System.out.println("NO");
 		}
+		mioScanner.close();
 	}
 }

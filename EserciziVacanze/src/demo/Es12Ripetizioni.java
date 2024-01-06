@@ -26,6 +26,8 @@ public class Es12Ripetizioni {
 			}
 		}
 		System.out.println("Programma Terminato");
+		
+		mioscanner.close();
 	}
 
 }

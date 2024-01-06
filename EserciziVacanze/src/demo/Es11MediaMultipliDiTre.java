@@ -38,10 +38,7 @@ public class Es11MediaMultipliDiTre {
 		
 		System.out.println("La media è "+media);
 		
-		
-		
-		
-		
+		mioscanner.close();
 	}
 
 }
