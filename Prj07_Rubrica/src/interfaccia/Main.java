@@ -47,7 +47,7 @@ public class Main {
 		}
 		
 		System.out.println("Programma Terminato.");
-		
+		scanner.close();
 	}
 
 	private static void menu() {
