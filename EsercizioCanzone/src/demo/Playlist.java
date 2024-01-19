@@ -13,6 +13,7 @@ public class Playlist {
 	}
 	
 	public void eliminaAutore(String autore) {
+		System.out.println("Elimino "+autore);
 		for (Canzone canzone : canzoni) {
 			if (canzone.autore.equals(autore)) {
 				canzone.autore = "";
@@ -35,6 +36,7 @@ public class Playlist {
 	
 	public int quanteAutore(String autore) {
 		int cont=0;
+		System.out.println("Numero di canzoni di "+autore+":");
 		for (int i = 0; i < this.canzoni.size(); i++) {
 			if (canzoni.get(i).autore.equals(autore)) {
 				cont++;
