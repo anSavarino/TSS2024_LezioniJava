@@ -21,8 +21,11 @@ public class RegistroCtrl {
 	}
 	
 	public void caricaStudentiDaFile() {
-		
-		File fileDiTesto = new File("studenti.txt");
+		System.out.println("Inserisci percorso file studenti:");
+		Scanner sc = new Scanner(System.in);
+		String percorso = sc.nextLine();
+		File fileDiTesto = new File(percorso);
+		//File fileDiTesto = new File("src\\Documenti\\studenti.txt");
 		
 		try {
 			Scanner scanner = new Scanner(fileDiTesto);
