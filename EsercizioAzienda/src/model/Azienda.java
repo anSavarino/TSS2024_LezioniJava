@@ -18,11 +18,14 @@ public class Azienda {
 		System.out.println("Impiegato "+i.getCognome()+" aggiunto");
 	}
 	
-	public void deleteImpiegato(Impiegato i) {
-		if (impiegati.contains(i)) {
-			impiegati.remove(i);
-			System.out.println("Impiegato "+i.getCognome()+" eliminato");
+	public void deleteImpiegato(String cognome) {
+		for (int i = 0; i < impiegati.size(); i++) {
+			if (impiegati.get(i).getCognome().equals(cognome)) {
+				impiegati.remove(impiegati.get(i));
+				System.out.println("Impiegato "+cognome+" eliminato");
+			}
 		}
+
 	}
 	public int stipendioTOT() {
 		int stipendioTotale = 0;
@@ -31,4 +34,5 @@ public class Azienda {
 		}
 		return stipendioTotale;
 	}
+	
 }

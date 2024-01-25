@@ -1,6 +1,8 @@
 package app;
 import model.Azienda;
 import model.Impiegato;
+
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -33,6 +35,7 @@ public class Main {
 		}
 		
 		System.out.println("Stipendio totale: "+azienda.stipendioTOT());
+
 	}
 	
 }
