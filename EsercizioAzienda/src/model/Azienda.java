@@ -23,6 +23,7 @@ public class Azienda {
 			if (impiegati.get(i).getCognome().equals(cognome)) {
 				impiegati.remove(impiegati.get(i));
 				System.out.println("Impiegato "+cognome+" eliminato");
+				i--;
 			}
 		}
 
