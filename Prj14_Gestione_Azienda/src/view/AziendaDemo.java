@@ -6,6 +6,7 @@ import model.Fattorino;
 import model.Impiegato;
 import model.Magazziniere;
 
+//ciao
 public class AziendaDemo {
 
 	public static void main(String[] args) {
