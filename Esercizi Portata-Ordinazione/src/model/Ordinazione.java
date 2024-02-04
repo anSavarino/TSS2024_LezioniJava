@@ -1,6 +1,8 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 
 public class Ordinazione {
 	private String nomeCLiente;
@@ -15,8 +17,9 @@ public class Ordinazione {
 	}
 	
 	public void aggiungiPortata(Portata p, int q) {
-		portate.add(p);
-		quantita.add(q);
+		for (int i = 0; i < q; i++) {
+			portate.add(p);
+		}
 	}
 	
 	public double conto() {
@@ -38,14 +41,16 @@ public class Ordinazione {
 	}
 	
 	public int numeroTotalePortate() {
-		int totale = 0;
-		for (int i = 0; i < quantita.size(); i++) {
-			totale += quantita.get(i);
-		}
-		return totale;
+//		int totale = 0;
+//		for (int i = 0; i < quantita.size(); i++) {
+//			totale += quantita.get(i);
+//		}
+		return portate.size();
 	}
 	
 	public int portateOrdinate() {
-		return portate.size();	
+		Set<Portata> set = new HashSet<>(portate);
+		
+		return set.size();	
 	}
 }
