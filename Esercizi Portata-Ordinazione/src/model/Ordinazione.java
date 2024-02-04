@@ -7,13 +7,11 @@ import java.util.HashSet;
 public class Ordinazione {
 	private String nomeCLiente;
 	private ArrayList<Portata> portate;
-	private ArrayList<Integer> quantita;
 	
 	
 	public Ordinazione(String nomeCLiente) {
 		this.nomeCLiente = nomeCLiente;
 		portate = new ArrayList<Portata>();
-		quantita = new ArrayList<Integer>();
 	}
 	
 	public void aggiungiPortata(Portata p, int q) {
@@ -41,10 +39,6 @@ public class Ordinazione {
 	}
 	
 	public int numeroTotalePortate() {
-//		int totale = 0;
-//		for (int i = 0; i < quantita.size(); i++) {
-//			totale += quantita.get(i);
-//		}
 		return portate.size();
 	}
 	
