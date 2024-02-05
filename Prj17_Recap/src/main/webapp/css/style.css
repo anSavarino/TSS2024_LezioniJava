@@ -1,0 +1,12 @@
+#menu{
+	display: flex;
+	height: 2.5em;
+	background-color: #0000a0;
+	align-items: center;
+}
+
+#menu li{
+	
+	list-style-type: none;
+	padding: 0 0.5em;
+}
