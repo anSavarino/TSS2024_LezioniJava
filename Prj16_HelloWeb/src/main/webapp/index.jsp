@@ -3,9 +3,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Biblioteca Nazionale</title>
 </head>
 <body>
+
+	<h1>Benvenuti alla Biblioteca Nazionale</h1>
+<%@ include file = "biblioteca.html" %>
+
+
 <%
 	String s = "Hello tomcat";
 	for(int i = 1; i <= 6; i++){

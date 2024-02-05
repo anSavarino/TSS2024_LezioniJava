@@ -12,7 +12,6 @@ public class Libro {
 	public Libro(String titolo, String autore) {
 		this.titolo = titolo;
 		this.autore = autore;
-		this.collocazione = setCollocazione();
 		this.disponibile = true;
 
 	}
@@ -43,8 +42,9 @@ public class Libro {
 		return collocazione;
 	}
 
-	public String setCollocazione() {
-		return this.collocazione = this.autore.substring(0, 2) + this.titolo.substring(0, 3) + this.titolo.length();
+	public void setCollocazione(String coll) {
+//		return this.collocazione = this.autore.substring(0, 2) + this.titolo.substring(0, 3) + this.titolo.length();
+		this.collocazione = coll;
 	}
 
 	public int getNumPag() {
@@ -65,8 +65,7 @@ public class Libro {
 
 	@Override
 	public String toString() {
-		return "Libro [titolo=" + titolo + ", autore=" + autore + ", collocazione=" + collocazione + ", numPag="
-				+ numPag + ", disponibile=" + disponibile + "]";
+		return "<li>"+collocazione+" - "+titolo+" - "+autore+"</li>";
 	}
 
 }

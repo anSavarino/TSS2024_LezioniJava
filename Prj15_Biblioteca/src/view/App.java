@@ -70,5 +70,7 @@ public class App {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		System.out.println("Ciao");
 	}
 }

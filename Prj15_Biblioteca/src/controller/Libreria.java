@@ -42,4 +42,28 @@ public class Libreria {
 	public void deleteLibro(Libro l) {
 		this.libri.remove(l);
 	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public String toString() {
+		StringBuilder output = new StringBuilder();
+		output.append("<h2>"+this.nome+"</h2>");
+		output.append("<ul>");
+		output.append("\n");
+		
+		for (Libro libro : libri) {
+			output.append(libro);
+			output.append("\n");
+		}
+		output.append("</ul>");
+		
+		return output.toString();
+	}
+	
 }
