@@ -1,6 +1,8 @@
-/.metadata/
-<<<<<<< HEAD
-=======
-./Servers/
-/Servers/
->>>>>>> a62fb274612d72fb201c0e1b1d5faff5ff256848
+.metadata/
+
+
+Servers/
+
+
+# Compiled class file
+*.class
