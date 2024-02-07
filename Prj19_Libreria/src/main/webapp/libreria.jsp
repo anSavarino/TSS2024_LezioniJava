@@ -9,12 +9,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@include file="addLibro.html" %>
 	<h1>Libri</h1>
 	<%ArrayList<Libro> libri = (ArrayList<Libro>)request.getAttribute("libri"); %>
-	<%@include file="addLibro.html" %>
+	
 	<ul>
 		<% for (Libro l : libri){ %>
-			<li><% l.getTitolo();%></li>
+			<li><%= l.getTitolo()%></li>
 			<%} %>
 	</ul>
 </body>

@@ -44,10 +44,10 @@ public class Libreria extends HttpServlet{
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		if(request.getParameter("titolo")!=null) {
+		if(request.getParameter("name")!=null) {
 			System.out.println("Dentro if");
-			String titolo = request.getParameter("author");
-			String autore = request.getParameter("name");
+			String autore = request.getParameter("author");
+			String titolo = request.getParameter("name");
 			int id = Integer.parseInt(request.getParameter("id"));
 			
 			System.out.println(id);
