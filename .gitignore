@@ -6,3 +6,6 @@ Servers/
 
 # Compiled class file
 *.class
+
+#Java Archive
+*.jar
