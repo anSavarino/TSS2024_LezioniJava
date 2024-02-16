@@ -8,9 +8,9 @@ public class Array2 {
 		
 		while(i<j) {
 			System.out.print(array[i]+","+array[j]);
-			if (i!= j-1) {
-				System.out.print(",");
-			}
+			System.out.print(",");
+//			if (i!= j-1) {
+//			}
 			i++;
 			j--;
 		}

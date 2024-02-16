@@ -3,16 +3,15 @@ public class Array {
 	public static void main(String[] args) {
 		
 		int array[] = {14, 5, 23, 89, 4, 50, 6};
-		
+		String stringa = "";
 		for (int i = 0; i < array.length/2; i++) {
-			System.out.print(array[i]+","+ array[array.length-i-1]);
-			if(!(i == array.length/2-1)) {
-				System.out.print(",");
-			}
+			stringa += array[i]+","+ array[array.length-i-1]+",";
 		}
 		if (array.length%2 != 0) {
-			System.out.print(","+array[array.length/2]);			
+			stringa += array[array.length/2]+",";			
 		}
+		String nstring = stringa.substring(0, stringa.length()-1);
+		System.out.println(nstring);
 
 	}
 
