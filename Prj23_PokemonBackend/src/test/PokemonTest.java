@@ -30,7 +30,7 @@ public class PokemonTest {
 			}
 			
 			ctrl.scriviFile("./files/pokemon_fuoco.txt", pFuoco);
-			for (Pokemon pokemon : pFuoco) {
+			for (Pokemon pokemon : pokedex) {
 				dao.addPokemon(pokemon);
 			}
 			
