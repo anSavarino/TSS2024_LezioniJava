@@ -18,6 +18,7 @@ public class Ordinazione {
 		for (int i = 0; i < q; i++) {
 			portate.add(p);
 		}
+		System.out.println(q+ " di "+p.getDescrizione()+" aggiunti");
 	}
 	
 	public double conto() {
@@ -29,7 +30,7 @@ public class Ordinazione {
 	}
 	
 	public double contoBevande() {
-		int conto = 0;
+		double conto = 0;
 		for (Portata portata : portate) {
 			if (portata.isBevanda()) {
 				conto += portata.getPrezzo();
