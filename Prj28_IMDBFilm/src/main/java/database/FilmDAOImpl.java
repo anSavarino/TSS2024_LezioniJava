@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONTokener;
+
 import model.Film;
 
 public class FilmDAOImpl implements FilmDao {
@@ -48,6 +50,16 @@ public class FilmDAOImpl implements FilmDao {
 	public Film getFilmByID(int id) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+
+	public List<Film> getFilmByYears(int dal, int al) {
+		
+		return getFilm()
+				.stream()
+				.filter(f -> f.getAnno()>= dal && f.getAnno()<=al)
+				.sorted()
+				.toList();
 	}
 
 }

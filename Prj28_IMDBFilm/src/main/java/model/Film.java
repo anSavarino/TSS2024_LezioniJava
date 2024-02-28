@@ -1,6 +1,7 @@
 package model;
 
-public class Film {
+public class Film implements Comparable<Film>{
+	
 	private int id;
 	private double rating;
 	private String titolo;
@@ -32,6 +33,10 @@ public class Film {
 	@Override
 	public String toString() {
 		return "Film [id=" + id + ", rating=" + rating + ", titolo=" + titolo + ", anno=" + anno + "]";
+	}
+	@Override
+	public int compareTo(Film o) {
+		return this.anno - o.anno;
 	}
 	
 	
